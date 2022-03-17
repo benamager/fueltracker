@@ -1,12 +1,12 @@
 {
-    "fuel-prices": [
-        {
-            "id": "2022-2-3",
-            "price": "14,49 kr"
-        },
-        {
-            "id": "2022-2-4",
-            "price": "15,49 kr"
-        }
-    ]
+  "fuel-prices": [
+    {
+      "id": "HEJ FÆTTER",
+      "price": "TAK FOR HJÆLPEN"
+    },
+    {
+      "id": "DU EN",
+      "price": "SKAT"
+    }
+  ]
 }

@@ -3,7 +3,7 @@ const PORT = 8000;
 const axios = require('axios');
 const cheerio = require('cheerio');
 const express = require('express');
-const { NEWDATE } = require('mysql/lib/protocol/constants/types');
+const fs = require('fs')
 
 //kalder npm for at få dens funktioner ud i app
 const app = express()
@@ -37,3 +37,21 @@ console.log(`${date_ob.getFullYear()}-${date_ob.getMonth()}-${date_ob.getDay()}`
 
 
 //json server --watch db.js
+
+
+
+
+
+fs.readFile('./db.json', 'utf8', (err, res) => {
+
+    if (err) {
+        console.log(`Error reading file from disk: ${err}`);
+    } else {
+
+        // parse JSON string to JSON object
+        const data = JSON.parse(res);
+
+        console.log(data)
+    }
+
+});
